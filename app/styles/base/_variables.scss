@@ -1,0 +1,54 @@
+// BASE
+// 
+// --
+$html__font-size: 16px;
+$html--sm__font-size: 14px;
+$gutter: rem(25);
+
+$mk-breakpoint: 560px;
+$sm-breakpoint: 768px;
+$xs-breakpoint: 480px;
+
+// COLORS
+//
+// --
+$primary: #3fa9f5;
+$blue1: #244f6d;
+$blue2: #3592d5;
+$blue-twitter: #08a0e9;
+$grey1: #6e6e6e;
+$grey2: #8b8b8b;
+$grey3: #5e5e5e;
+$grey4: #e4e4e4;
+$grey5: #eeeeee;
+$grey6: #383838;
+$grey7: #5e5e5e;
+$grey8: #f0f0f0;
+$grey9: #d9d9d9;
+$grey10: #ababab;
+$grey11: #a1a1a1;
+$grey12: #919191;
+$orange: #f56e34;
+
+
+// FONT
+//
+// --
+$karla-font: "Karla", sans-serif;
+
+// NAVBAR
+//
+// --
+$navbar__gutter-y: 30; // ~px
+$navbar__gutter-x: 31; // ~px
+$navbar__font-size: 17; // ~px;
+$navbar__height: $navbar__font-size + $navbar__gutter-y + $navbar__gutter-y;
+$navbar--mobile__height: 58; // ~px
+$navbar__width: 680; // ~px;
+$navbar__logo-width: 50; // ~px;
+$navbar__logo-height: 56; // ~px;
+$navbar__center-padding: (78 + ($navbar__logo-width / 2)) - $navbar__gutter-x; // ~px
+$navbar__font-color: $grey1;
+
+$navbar__background: white;
+

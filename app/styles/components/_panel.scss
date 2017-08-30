@@ -1,0 +1,18 @@
+.panel {
+	border-radius: 4px;
+	background: #efefefef;	
+	.panel-body, .panel-heading, .panel-footer {
+		padding: .625rem;
+	}
+	&.panel--flush {
+		border: none;
+		box-shadow: none;
+		.panel-body, .panel-heading, .panel-footer {
+			padding: 0;
+		}
+		img { 
+			border-radius: 4px;
+		}
+	}
+	
+}

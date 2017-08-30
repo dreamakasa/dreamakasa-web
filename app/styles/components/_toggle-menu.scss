@@ -1,0 +1,40 @@
+.toggle-menu {
+	background: transparent;
+	position: relative;
+	border: 0;
+	border-radius: 0;
+	&:focus { outline: none; }
+	.bar {
+		vertical-align: middle;
+		display: inline-block;
+		position: relative !important;
+		height: 16px;
+		width: 20px;
+		// background: $grey1;
+		.icon-bar {
+			display: block;
+			background: black;   
+			position: absolute;
+			width: 20px;
+			height: 2px;
+			transition: all 350ms ease;
+			&:nth-child(1) { top: 0; }
+			&:nth-child(2) { top: px(8 - 1); }
+			&:nth-child(3) { bottom: 0; }
+		}
+	}
+	.text { margin-left: 8px; }
+	&.open {
+		.icon-bar {
+			&:nth-child(1) { 
+				top: 8px;
+				transform: rotate(45deg);
+			}
+			&:nth-child(2) { width: 0; }
+			&:nth-child(3) {
+				top: 8px;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}

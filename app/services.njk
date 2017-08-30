@@ -1,0 +1,121 @@
+{% extends "nunjucks/default.njk" %}
+    {% block content %}
+    {% import "nunjucks/partials/navbar.njk" as navbar %}
+	{{ navbar.activePage('services') }}
+
+    <div class="container-fluid main-container">
+      	<div class="row section section--banner transparent text-center">
+      		<div class="container">
+	      		<div class="col-md-10 col-md-offset-1">	
+			      	<h1 class="heading">What can we help you with?</h1>
+			        <h6 class="text">
+			        	Deliver great services is our main priority. User experience is our resource and design is our way to build user-centered products.
+			        </h6>
+		        </div>
+	        </div>
+	    </div>
+	    <div class="row section section--services transparent p-t-0">
+      		<div class="container">
+	        	<div class="service col-sm-12">
+			    	<div class="items media">
+					  	<div class="media-left">
+							<div class="item__img-wrapper circle">
+						   		<img src="images/web.png" class="img-responsive" alt="Web Development">
+						  	</div>
+					  	</div>
+					  	<div class="media-body">
+						    <h4 class="media-heading item__text">Web Development</h4>
+						    <p class="item__sub-text">Wev develop web-based product that able to be used directly on our browser.</p>
+					  	</div>
+					</div>
+				</div>
+	        	<div class="service col-sm-12">
+			    	<div class="items media">
+					  	<div class="media-left">
+							<div class="item__img-wrapper circle">
+						   		<img src="images/mobile.png" class="img-responsive" alt="Mobile Application Development">
+						  	</div>
+					  	</div>
+					  	<div class="media-body">
+						    <h4 class="media-heading item__text">Mobile Application Development</h4>
+						    <p class="item__sub-text">Smartphone is handy device that able to carry around. We build and develop mobile application so it can be accessed anytime and anywhere for you</p>
+					  	</div>
+					</div>
+				</div>
+	        	<div class="service col-sm-12">
+			    	<div class="items media">
+					  	<div class="media-left">
+							<div class="item__img-wrapper circle">
+						   		<img src="images/product.png" class="img-responsive" alt="Product Design">
+						  	</div>
+					  	</div>
+					  	<div class="media-body">
+						    <h4 class="media-heading item__text">Product Design</h4>
+						    <p class="item__sub-text">We make solution of the problem as the product and we design it so our product will be helpful and also.. beautiful!</p>
+					  	</div>
+					</div>
+				</div>
+	        	<div class="service col-sm-12">
+			    	<div class="items media">
+					  	<div class="media-left">
+							<div class="item__img-wrapper circle">
+						   		<img src="images/workshop.png" class="img-responsive" alt="Workshop & Seminar">
+						  	</div>
+					  	</div>
+					  	<div class="media-body">
+						    <h4 class="media-heading item__text">Workshop & Seminar</h4>
+						    <p class="item__sub-text">Sharing is caring. By sharing experiences and knowledge, we helped educate about developing the great products.</p>
+					  	</div>
+					</div>
+				</div>
+	        </div>
+      	</div>
+		<div class="row section section--quotes text-center border-b-grey">
+    		<div class="container">
+    			<h5 class="heading">Client Thoughts</h5>
+				<div id="carousel-example-generic" class="carousel carousel--text slide col-sm-12" data-ride="carousel">
+                  	<!-- Indicators -->
+                  	<ol class="carousel-indicators">
+	                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  	</ol>
+
+                  	<!-- Wrapper for slides -->
+                	<div class="carousel-inner" role="listbox">
+	                    <div class="item active">
+	                        <div class="carousel-caption">
+	                        	<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad finem.</blockquote>	
+	                        	<p class="profil">
+							        <img src="images/avatar.png">
+						        	John Sigh
+						        </p>	
+					        </div>
+	                    </div>
+	                    <div class="item">
+	                      	<div class="carousel-caption">
+	                        	<blockquote>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Tars!.</blockquote>			
+	                        	<p class="profil">
+							        <img src="images/avatar.png">
+						        	Keegan Turkova
+						        </p>	
+					        </div>
+                    	</div>
+                    	<div class="item">
+	                      	 <div class="carousel-caption">
+	                        	<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elitaboris nisi ut aliquip ex ea commodo consequat.</blockquote>
+	                        	<p class="profil">
+							        <img src="images/avatar.png">
+						        	Jamilee Suyitna
+						        </p>	
+					        </div>
+                    	</div>
+                  	</div>
+                </div>
+	        </div>
+    	</div>
+
+    {%- include "nunjucks/partials/footer.njk" %}
+	{% endblock %}
+
+    </div>

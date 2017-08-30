@@ -1,0 +1,44 @@
+html {
+	font-size: $html__font-size;
+	@media (max-width: $screen-sm-max) {
+		font-size: $html--sm__font-size;
+	}
+}
+// 
+body {
+	font-size: inherit;
+}
+
+p, a, label, button {
+	font-size: 1rem; // ~ 16px
+}
+
+h6 {
+	font-size: 1.25rem; // ~ 20px
+	line-height: 1.5;
+}
+
+h5 {
+	font-size: 1.563rem; // ~ 25px
+	line-height: 1.5;
+}
+
+h4 {
+	font-size: 1.953rem; // ~ 31.25px	
+	line-height: 1.5;
+}
+
+h3 {
+	font-size: 2.441rem; // ~ 39,063px
+	line-height: 1.3;
+}
+
+h2 {
+	font-size: 3.052rem; // ~ 48.828px
+	line-height: 1.3;
+}
+
+h1 {
+	font-size: 3.815rem; // ~ 61.035px
+	line-height: 1.3;
+}

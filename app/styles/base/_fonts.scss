@@ -1,0 +1,6 @@
+// Karla, Sans-Serif
+// --
+@include font-face("Karla", "../fonts/karla-v5-latin/karla-v5-latin-regular", normal, normal);
+@include font-face("Karla", "../fonts/karla-v5-latin/karla-v5-latin-italic", italic, normal);
+@include font-face("Karla", "../fonts/karla-v5-latin/karla-v5-latin-700", normal, 700);
+@include font-face("Karla", "../fonts/karla-v5-latin/karla-v5-latin-700italic", italic, 700);

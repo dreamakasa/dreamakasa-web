@@ -1,0 +1,65 @@
+.btn {
+	font-size: rem(17);
+	letter-spacing: .18em;
+	padding: .7em 1.5em;
+	border-radius: 7px;
+	&.btn--orange {
+		background: $orange;
+		color: white;
+		// img {
+		// 	height: 1em;
+		// }
+		// &:hover img {
+		// 	animation: none;
+		// }
+	}
+	&:focus, &:active, &:active:focus { outline: none; box-shadow: none; }
+
+	&.animate--arrow-right {	
+		position: relative;	
+		.arrow {
+			margin-left: .5rem;
+			animation: teeterRight 2s infinite;
+			background-image: url('../images/arrow.png');
+			height: 1em;
+			width: 1em;
+			background-size: contain;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&:hover .arrow {
+			animation: none;
+		}
+	}
+
+	&.hover--swipe-left {
+		&:before {
+			background: rgba(255, 255, 255, .1);
+			// border-radius: 100%;
+			transform: scaleX(0);
+			transform-origin: 100% 50%;
+			transition-property: transform;
+			transition-duration: 200ms;
+			transition-timing-function: ease-out;
+		}
+		&:hover {
+			&:before {
+				transform: scaleX(1);
+			}
+		}
+	}
+}
+
+
+[class*="hover--"] {
+	overflow: hidden;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}

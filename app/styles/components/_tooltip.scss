@@ -1,0 +1,46 @@
+.tooltip {
+	white-space: nowrap;
+	.tooltip-inner { 
+		background: $blue1; 
+		font-family: $karla-font;
+		padding: rem(8) rem(14);
+		font-size: rem(15);
+	}
+	&.bottom {
+		margin-top: 8px;
+		.tooltip-arrow { 
+			top: -5px;
+			margin-left: -6px;
+			border-width: 0 6px 10px;
+			border-bottom-color: $blue1 !important; 
+		}
+	}
+	&.top {
+		margin-top: -8px;
+		.tooltip-arrow { 
+			bottom: -5px;
+			margin-left: -6px;
+			border-width: 10px 6px 0;
+			border-top-color: $blue1 !important; 
+		}
+	}
+	&.left {
+		margin-left: -8px;
+		.tooltip-arrow { 
+			right: -5px;
+			margin-top: -6px;
+			border-width: 6px 0 6px 10px;
+			border-left-color: $blue1 !important; 
+		}
+	}
+	&.right {
+		margin-left: 8px;
+		.tooltip-arrow { 
+			left: -5px;
+			margin-top: -6px;
+			border-width: 6px 10px 6px 0;
+			border-right-color: $blue1 !important; 
+		}
+	}
+
+}

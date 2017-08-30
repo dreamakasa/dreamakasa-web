@@ -1,0 +1,38 @@
+.items {
+	.item__img-wrapper {			
+		margin: .875rem auto;
+		&.circle {
+			border: 1px solid $grey4;
+			border-radius: 100%;
+			width: rem(100);
+			height: rem(100);
+			display: block;
+			img {
+				position: relative;
+				display: block;
+				height: 50%;
+				margin: 25% auto;
+			}
+		}
+		&.rect {
+
+		}
+	}
+	.item__text {
+		color: $blue1;
+		font-size: rem(20);
+		margin-top: rem(30);
+	}
+	.item__sub-text {
+		margin-top: rem(15);
+		color: $grey3;
+	}
+	.item__social-link {
+		margin-top: 1rem;
+		img {
+			width: rem(31);
+			height: rem(31);
+		}
+	}
+
+}

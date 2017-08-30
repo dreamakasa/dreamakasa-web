@@ -1,0 +1,8 @@
+.list-group {
+	&.list-group--flush {
+		.list-group-item { border: none !important; background: transparent; }
+	}
+	&.list-inline.pull-right {
+		.list-group-item:last-child { padding-right: 0; }
+	}
+}

@@ -1,0 +1,67 @@
+{% extends "nunjucks/default.njk" %}
+    {% block content %}
+    {% import "nunjucks/partials/navbar.njk" as navbar %}
+	{{ navbar.activePage('contact') }}
+
+    <div class="container-fluid main-container">
+      	<div class="row section section--banner text-center transparent">
+      		<div class="container">
+	      		<div class="col-md-10 col-md-offset-1">	
+			      	<h1 class="heading">Interested with us?</h1>
+			        <h6 class="text">
+			        	We're available for all work related inquiries and general questioning. Reach out to us anytime and we'll get back to you!
+			        </h6>
+		        </div>
+	        </div>
+	    </div>
+        <div class="row section section--contact transparent p-t-0">
+        	<div class="container">
+	            <form class="col-sm-6 col-sm-offset-3 form--panel">
+	             	<div class="form-group">
+		                <label for="name">
+		                  	Name
+		                  	<span class="label__sub">What should we call you?</span>
+		                </label>
+	                	<input type="text" class="form-control" id="name">
+	              	</div>
+	              	<div class="form-group">
+		                <label for="occasion">
+		                  Occasion
+		                </label>
+		                <div class="select-wrapper">
+		                	<select class="form-control" id="occasion">
+		                		<option>Just want to say hi</option>
+		                		<option>Lorem ipsum dolor sit amet</option>
+		                		<option>Consetur adsicing elit</option>
+		                		<option>Ut enim ad finem</option>
+		                	</select>
+	                	</div>
+	              	</div>
+	             	<div class="form-group">
+		                <label for="email">
+		                  	Email
+		                  	<span class="label__sub">Where should we reply to?</span>
+		                </label>
+	                	<input type="email" class="form-control" id="email">
+	              	</div>
+	             	<div class="form-group">
+		                <label for="email">
+		                  	Message
+		                  	<span class="label__sub">What do you want to talk about?</span>
+		                </label>
+		                <textarea class="form-control"></textarea>
+	              	</div>
+		            <button type="submit" class="btn btn-default btn-block btn--orange animate--arrow-right hover--swipe-left">
+		                SUBMIT
+		                <span class="arrow pull-right"></span>
+		              </button>
+	            </form>
+		    </div>
+        </div>
+        <div class="row section section--contact-foot p-t-0 p-b-0 border-b-grey"></div>
+   
+
+    {%- include "nunjucks/partials/footer.njk" %}
+	{% endblock %}
+
+	</div>

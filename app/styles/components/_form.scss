@@ -1,0 +1,59 @@
+form {
+	.form-control, button, input[type="submit"] {
+		line-height: 1 !important;
+	}
+	&.form--panel {
+		background: white;
+		border-radius: 5px;
+		padding: rem(45); /* 45px */
+		.form-group {
+			margin-bottom: rem(33);
+			label {
+				font-size: 1.125rem;
+				color: $blue1;
+				line-height: 1;
+				margin-bottom: rem(11);
+				.label__sub {
+					font-size: 1rem;
+					color: $grey10;
+					font-family: $karla-font;
+					font-weight: bold;
+					display: block;
+					margin-top: rem(4);
+					margin-bottom: rem(8);
+				}
+			}
+			.form-control {
+				font-size: 1rem;
+				padding: 1rem 1.125rem;
+				height: auto;
+				color: $grey3;
+				// line-height	: 1;
+
+			}
+			.select-wrapper {
+				position: relative;
+				background: transparent;
+				&:before {
+					font-family: 'FontAwesome';
+					content: '\f0d7';
+					font-size: 1em;
+					color: $grey12;
+					position: absolute;
+					right: 0;
+					margin: 1rem 1.125rem;
+
+				}
+				select {
+					appearance: none;
+					
+				}
+			}
+		}
+		button, input[type="submit"] {
+			font-family: $karla-font;
+			padding: 1rem 1.625rem;
+			// line-height	: 1;
+		}
+	}
+}

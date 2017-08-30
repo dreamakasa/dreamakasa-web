@@ -1,0 +1,13 @@
+#overlay {
+	transition: all 300ms ease-in-out;
+	visibility: hidden;
+	background: transparent;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1050;
+	&.overlayed {
+		visibility: visible;
+		background: rgba(0, 0, 0, .5);
+	}
+}

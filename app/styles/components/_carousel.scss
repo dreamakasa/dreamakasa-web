@@ -1,0 +1,17 @@
+.carousel {
+	&.carousel--text {
+		// background: red;
+		.carousel-caption {
+			position: relative;
+			left: 0;
+			text-shadow: none;
+			margin-bottom: 1.5rem;
+		}
+		.carousel-indicators {
+			li {
+				background: $grey9;
+				&.active { background: darken($grey9, 5)}
+			}
+		}
+	}
+}
