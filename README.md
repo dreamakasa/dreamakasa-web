@@ -41,7 +41,7 @@ bower -v
 First, clone this repo
 ```sh
 # clonning repo
-git clone https://github.com/dreamakasa/dreamakasa-ui.git
+git clone https://github.com/dreamakasa/dreamakasa-web.git
 ```
 Then, install npm and bower packages
 ```sh
