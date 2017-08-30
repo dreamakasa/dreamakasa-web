@@ -57,5 +57,5 @@ Last step, running whoooyaaa
 # running gulp
 gulp serve
 ```
-It should automaticly open browser on http://localhost:9000/
+It should automatically open browser on http://localhost:9000/
 
