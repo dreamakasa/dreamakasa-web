@@ -21,6 +21,7 @@ $(document).ready(function() {
 
 	$(window).scroll(function(event){
 	    didScroll = true;
+
 	});
 
 	setInterval(function() {
@@ -40,11 +41,15 @@ $(document).ready(function() {
 	    if (st > lastScrollTop && st > navbarHeight){
 	   	 	// Scroll Down
 	        $('nav.navbar').addClass('navbar--hide');
+
+	        // remove open navbar when scrolled down
+            $('#overlay').removeClass('overlayed');
+			$('#toggleNavbar').removeClass('open');
+			$('.navbar').removeClass('navbar--open');
 	        // console.log('hide');
 	    } else if(st + $(window).height() < $(document).height()) {
 	    	// Scroll Up
             $('nav.navbar').removeClass('navbar--hide');
-        	// console.log('show');
 	    }
 	    
 	    lastScrollTop = st;
