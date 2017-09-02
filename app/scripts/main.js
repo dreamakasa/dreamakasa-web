@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	/*
+		HANDLING SCROLL, OVERLAY, NAVBAR
+		--------------------------------
+	*/
 	$('#toggleNavbar').on('click', function() {
 		$(this).toggleClass('open');
 		// $('.wrapper').toggleClass('sidebar--open');
@@ -56,4 +60,39 @@ $(document).ready(function() {
 	}
 
 
-})
+	/*
+		FETCHING SOCIAL MEDIA FEED
+		--------------------------------
+	*/
+
+	// Instagram
+	var instg = $.ajax({
+		url: 'https://api.instagram.com/v1/users/self/media/recent',
+		dataType: 'jsonp',
+		data: {	access_token: '3576455450.4550f50.f2afae698ef84458b27e5dbb4a23bee3', count: 2 },
+		success: function(res) {
+				$('.section--timeline .timeline-container').prepend(
+					`<a href="${res.data[0].link}" class="timeline instagram">
+	 					<div class="text">
+	 						 ${res.data[0].caption.text}
+	 					</div>
+					 	<img src="${res.data[0].images.standard_resolution.url}" alt="Instagram Photo"/>
+					</a>`
+				);
+				$('.section--timeline .timeline-container').append(
+					`<a href="${res.data[1].link}" class="timeline instagram">
+	 					<div class="text">
+	 						 ${res.data[1].caption.text}
+	 					</div>
+					 	<img src="${res.data[1].images.standard_resolution.url}" alt="Instagram Photo"/>
+					</a>`
+				);
+		},
+		error: function() {
+			console.log("error");
+		}
+	
+	});
+
+
+});
