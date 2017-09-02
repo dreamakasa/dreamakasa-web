@@ -69,7 +69,7 @@ $(document).ready(function() {
 	var instg = $.ajax({
 		url: 'https://api.instagram.com/v1/users/self/media/recent',
 		dataType: 'jsonp',
-		data: {	access_token: '3576455450.4550f50.f2afae698ef84458b27e5dbb4a23bee3', count: 2 },
+		data: {	access_token: '4035390268.1677ed0.6409e7a7c54941e4bc892d7d975b7376', count: 2 },
 		success: function(res) {
 				$('.section--timeline .timeline-container').prepend(
 					`<a href="${res.data[0].link}" class="timeline instagram">
@@ -87,6 +87,7 @@ $(document).ready(function() {
 					 	<img src="${res.data[1].images.standard_resolution.url}" alt="Instagram Photo"/>
 					</a>`
 				);
+				console.log(res)
 		},
 		error: function() {
 			console.log("error");

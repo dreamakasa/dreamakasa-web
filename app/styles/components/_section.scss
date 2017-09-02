@@ -78,8 +78,10 @@
 				}
 				&.instagram {
 					position: relative;
-					img {
+					img { 
+						height: 100%;
 						width: 100%;
+						object-fit: cover;
 					}
 					.text {
 						padding: rem(25) rem(19); 
