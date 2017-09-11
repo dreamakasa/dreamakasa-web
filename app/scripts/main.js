@@ -72,7 +72,7 @@ $(document).ready(function() {
 		data: {	access_token: '4035390268.1677ed0.6409e7a7c54941e4bc892d7d975b7376', count: 2 },
 		success: function(res) {
 				$('.section--timeline .timeline-container').prepend(
-					`<a href="${res.data[0].link}" class="timeline instagram">
+					`<a href="${res.data[0].link}" class="timeline instagram" target="_blank">
 	 					<div class="text">
 	 						 ${res.data[0].caption.text}
 	 					</div>
@@ -80,7 +80,7 @@ $(document).ready(function() {
 					</a>`
 				);
 				$('.section--timeline .timeline-container').append(
-					`<a href="${res.data[1].link}" class="timeline instagram">
+					`<a href="${res.data[1].link}" class="timeline instagram" target="_blank">
 	 					<div class="text">
 	 						 ${res.data[1].caption.text}
 	 					</div>
@@ -90,10 +90,30 @@ $(document).ready(function() {
 				console.log(res)
 		},
 		error: function() {
-			console.log("error");
+			console.log('error');
 		}
 	
 	});
+
+	// Twitter
+	var twitter = $.ajax({
+		url: 'twitter-get.php',
+		success: function(res) {
+				res.forEach(function(tweet) {
+					$('.section--timeline .timeline-container .timeline:first-child').after(
+						`<div class="timeline twitter">
+						 	<div class="text__body">${tweet.text}</div>
+					 		<a href="https://twitter.com/statuses/${tweet.id_str}" class="text__footer" target="_blank">view on twitter <i class="fa fa-twitter pull-right"></i></a>
+						</div>`
+					);
+				})
+		},
+		error: function() {
+			console.log('Opps, cant display tweets');
+		}
+
+	});
+
 
 
 });

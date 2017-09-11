@@ -27,6 +27,9 @@
     "gulp-uglify": "^1.1.0",
     "gulp-useref": "^3.0.0",
     "main-bower-files": "^2.5.0",
+    "require": "^2.4.20",
+    "requirejs": "^2.3.5",
+    "twitter-node-client": "0.0.6",
     "wiredep": "^2.2.2"
   },
   "eslintConfig": {
