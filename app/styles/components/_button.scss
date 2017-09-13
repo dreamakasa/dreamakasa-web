@@ -6,6 +6,7 @@
 	&.btn--orange {
 		background: $orange;
 		color: white;
+		border: none;
 		// img {
 		// 	height: 1em;
 		// }
@@ -20,7 +21,7 @@
 		.arrow {
 			margin-left: .5rem;
 			animation: teeterRight 2s infinite;
-			background-image: url('../images/arrow.png');
+			background-image: url('../images/arrow.svg');
 			height: 1em;
 			width: 1em;
 			background-size: contain;
