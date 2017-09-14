@@ -3,7 +3,7 @@
     {% import "nunjucks/partials/navbar.njk" as navbar %}
 	{{ navbar.activePage('services') }}
 
-    <div class="container-fluid main-container">
+    	<div class="container-fluid main-container">
       	<div class="row section section--banner transparent text-center">
       		<div class="container">
 	      		<div class="col-md-10 col-md-offset-1">	
@@ -115,7 +115,8 @@
 	        </div>
     	</div>
 
-    {%- include "nunjucks/partials/footer.njk" %}
-	{% endblock %}
+    	{%- include "nunjucks/partials/footer.njk" %}
 
-    </div>
+   		</div> <!-- /.main-container -->
+   		
+	{% endblock %}
