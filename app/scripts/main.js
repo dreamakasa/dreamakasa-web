@@ -66,7 +66,7 @@ $(document).ready(function() {
 	*/
 
 	// Instagram
-	var instg = $.ajax({
+	$.ajax({
 		url: 'https://api.instagram.com/v1/users/self/media/recent',
 		dataType: 'jsonp',
 		data: {	access_token: '4035390268.1677ed0.6409e7a7c54941e4bc892d7d975b7376', count: 2 },
@@ -87,32 +87,51 @@ $(document).ready(function() {
 					 	<img src="${res.data[1].images.standard_resolution.url}" alt="Instagram Photo"/>
 					</a>`
 				);
-				console.log(res)
 		},
 		error: function() {
 			console.log('error');
 		}
 	
-	});
+	}).done(function() { 
 
-	// Twitter
-	var twitter = $.ajax({
-		url: 'twitter-get.php',
-		success: function(res) {
-				res.forEach(function(tweet) {
-					$('.section--timeline .timeline-container .timeline:first-child').after(
-						`<div class="timeline twitter">
-						 	<div class="text__body">${tweet.text}</div>
-					 		<a href="https://twitter.com/statuses/${tweet.id_str}" class="text__footer" target="_blank">view on twitter <i class="fa fa-twitter pull-right"></i></a>
-						</div>`
-					);
-				})
-		},
-		error: function() {
-			console.log('Opps, cant display tweets');
-		}
+		// Twitter
+		$.ajax({
+			url: 'twitter-get.php',
+			success: function(res) {
+					res.forEach(function(tweet) {
+						$('.section--timeline .timeline-container .timeline:first-child').after(
+							`<div class="timeline twitter">
+							 	<div class="text__body">${tweet.text}</div>
+						 		<a href="https://twitter.com/statuses/${tweet.id_str}" class="text__footer" target="_blank">view on twitter <i class="fa fa-twitter pull-right"></i></a>
+							</div>`
+						);
+					})
+			},
+			error: function() {
+				console.log('Opps, cant display tweets');
+			}
 
-	});
+		});
+	})
+    	
+	// Fetch quotes for index.html only
+	if ($('.main-container').attr('id') == 'index-page') {
+		var quotes = $.ajax({
+			url: 'quotes.json',
+			success: function(res) {
+				var resQuote = res[Math.floor((Math.random() * res.length))];
+				$('.section--quotes#indexQuotes').find('blockquote').html(resQuote.quote)
+				$('.section--quotes#indexQuotes').find('.profil').html(
+											        `<img src="${resQuote.img}" alt="profile">
+										        	${resQuote.name}, ${resQuote.role}`
+												 );
+			},
+			error: function() {
+				console.log('error');
+			}
+		
+		});		
+	}
 
 
 

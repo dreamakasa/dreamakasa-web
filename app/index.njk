@@ -3,7 +3,7 @@
     {% import "nunjucks/partials/navbar.njk" as navbar %}
 	{{ navbar.activePage('index') }}
 
-    <div class="container-fluid main-container">
+    <div class="container-fluid main-container" id="index-page">
       	<div class="row section section--banner transparent p-b-0">
       		<div class="container text-center">
 	      		<div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">	
@@ -130,7 +130,7 @@
 				</div>
 	    	</div>
 	    </div>
-    	<div class="row section section--quotes text-center border-b-grey">
+    	<div class="row section section--quotes text-center border-b-grey" id="indexQuotes">
     		<div class="container">
 	      		<div class="col-sm-12">	
 			        <blockquote>
@@ -145,7 +145,6 @@
     	</div>
     
     {%- include "nunjucks/partials/footer.njk" %}
-	{% endblock %}
 
     </div> <!-- /.main-container -->
-
+	{% endblock %}
