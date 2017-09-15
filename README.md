@@ -1,11 +1,11 @@
-# dreamakasa-ui
-This is just early-development-stage of our web frontend
+# Dream Akasa
+This is just early-development-stage of our web frontend.
 
 ## Running Dev Mode
 To run on development mode, you need to have [nodejs](https://nodejs.org/), [npm](https://www.npmjs.com/), [gulp](http://gulpjs.com/), and [bower](https://bower.io/) installed on your computer.
 
 ### Install Node.js and NPM
-You can download and install Node.js from the [official website](https://nodejs.org/). 
+You can download and install Node.js from the [official website](https://nodejs.org/).
 NPM comes with nodejs, so you dont need to install it manually
 
 ```sh
@@ -58,4 +58,3 @@ Last step, running whoooyaaa
 gulp serve
 ```
 It should automatically open browser on http://localhost:9000/
-
