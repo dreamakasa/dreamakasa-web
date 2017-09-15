@@ -44,11 +44,10 @@ $navbar__gutter-x: 31; // ~px
 $navbar__font-size: 17; // ~px;
 $navbar__height: $navbar__font-size + $navbar__gutter-y + $navbar__gutter-y;
 $navbar--mobile__height: 58; // ~px
-$navbar__width: 680; // ~px;
+$navbar__width: 710; // ~px;
 $navbar__logo-width: 50; // ~px;
 $navbar__logo-height: 56; // ~px;
 $navbar__center-padding: (78 + ($navbar__logo-width / 2)) - $navbar__gutter-x; // ~px
 $navbar__font-color: $grey1;
-
 $navbar__background: white;
 
