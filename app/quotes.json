@@ -1,26 +1,38 @@
 [
 	{
-		"name"	: "Kukuh Aji Sulistyo",
+		"name"	: "Diah Ajeng",
 		"img"	: "images/avatar.png",
-		"role"	: "Dream Akasa - VP Engineering",
-		"quote"	: "Ancient alien Annunaki otherworldly visitors clearly extraterrestrialy Vymaanika-Shaastra Sumerian texts space time. Burmuta triangle Indian texts clearly evidogy sightings"
+		"role"	: "Co-Founder, Business and Product development",
+		"quote"	: "In developing, we always keep up the latest technology by using up to date tools."
 	},
 	{
 		"name": "Afnizar Nur Ghifari",
 		"img"	: "images/avatar.png",
-		"role": "Dream Akasa - Co-founder, Creative Director",
-		"quote": "I had a vision of a world without Batman. The Mob ground out a little profit so do the police"
+		"role": "Co-Founder, Creative Director",
+		"quote": "We are not just designing something that work, but we make it easy to use and make your product more efficient!"
 	},
 	{
-		"name": "Blablabla",
+		"name": "Febry Ghaisani",
 		"img"	: "images/avatar.png",
-		"role": "Dream Akasa - Blabalbalaa",
-		"quote": "Blabla blabla blablaa"
+		"role": "Co-Founder, Business and Product development",
+		"quote": "We put everything that we got to build a good quality product."
 	},
 	{
-		"name": "Tabaksadas",
+		"name": "Kukuh Aji Sulistyo",
 		"img"	: "images/avatar.png",
-		"role": "Dream Akasa - Bulbukasosk",
-		"quote": "Bulakskgels Kutolkakiwel askdieloowk lijnwliei adkkillwoba kduuelwn askdirlo liseok dkjuklkhwpo djuw kduwjw dwi kdek"
+		"role": "VP Engineering",
+		"quote": "We are creating simplicity to control the complexity of your product."
+	}
+	{
+		"name": "Rike Adelia",
+		"img"	: "images/avatar.png",
+		"role": "UI/UX Strategist",
+		"quote": "Teamwork is our principle."
+	}
+	{
+		"name": "Setyo Nugroho",
+		"img"	: "images/avatar.png",
+		"role": "Chief Technical Officer",
+		"quote": "We only using the best tech stack that solve your problem perfectly."
 	}
 ]

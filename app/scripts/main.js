@@ -38,7 +38,7 @@ $(document).ready(function() {
 
 	function hasScrolled() {
 	    var st = $('body').scrollTop();
-	    
+
 	    if(Math.abs(lastScrollTop - st) <= delta)
 	        return;
 
@@ -55,10 +55,29 @@ $(document).ready(function() {
 	    	// Scroll Up
             $('nav.navbar').removeClass('navbar--hide');
 	    }
-	    
+
 	    lastScrollTop = st;
 	}
 
+
+	// Fetch quotes for index.html only
+	if ($('.main-container').attr('id') == 'index-page') {
+		var quotes = $.ajax({
+			url: 'quotes.json',
+			success: function(res) {
+				var resQuote = res[Math.floor((Math.random() * res.length))];
+				$('.section--quotes#indexQuotes').find('blockquote').html(resQuote.quote)
+				$('.section--quotes#indexQuotes').find('.profil').html(
+															`<img src="${resQuote.img}" alt="profile">
+															${resQuote.name}, ${resQuote.role}`
+												 );
+			},
+			error: function() {
+				console.log('error');
+			}
+
+		});
+	}
 
 	/*
 		FETCHING SOCIAL MEDIA FEED
@@ -91,8 +110,8 @@ $(document).ready(function() {
 		error: function() {
 			console.log('error');
 		}
-	
-	}).done(function() { 
+
+	}).done(function() {
 
 		// Twitter
 		$.ajax({
@@ -113,26 +132,5 @@ $(document).ready(function() {
 
 		});
 	})
-    	
-	// Fetch quotes for index.html only
-	if ($('.main-container').attr('id') == 'index-page') {
-		var quotes = $.ajax({
-			url: 'quotes.json',
-			success: function(res) {
-				var resQuote = res[Math.floor((Math.random() * res.length))];
-				$('.section--quotes#indexQuotes').find('blockquote').html(resQuote.quote)
-				$('.section--quotes#indexQuotes').find('.profil').html(
-											        `<img src="${resQuote.img}" alt="profile">
-										        	${resQuote.name}, ${resQuote.role}`
-												 );
-			},
-			error: function() {
-				console.log('error');
-			}
-		
-		});		
-	}
-
-
 
 });

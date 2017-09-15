@@ -9,9 +9,9 @@ form {
 		.form-group {
 			margin-bottom: rem(33);
 			label {
-				font-size: 1.125rem;
+				font-size: 1.1rem;
 				color: $blue1;
-				line-height: 1;
+				line-height: 1em;
 				margin-bottom: rem(11);
 				.label__sub {
 					font-size: 1rem;
@@ -19,7 +19,7 @@ form {
 					font-family: $karla-font;
 					font-weight: bold;
 					display: block;
-					margin-top: rem(4);
+					margin-top: rem(8);
 					margin-bottom: rem(8);
 				}
 			}
@@ -46,7 +46,7 @@ form {
 				}
 				select {
 					appearance: none;
-					
+
 				}
 			}
 		}

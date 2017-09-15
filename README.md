@@ -52,7 +52,7 @@ npm install
 bower install
 ```
 
-Last step, running whoooyaaa
+Last step, running whoooyaaa!
 ```sh
 # running gulp
 gulp serve

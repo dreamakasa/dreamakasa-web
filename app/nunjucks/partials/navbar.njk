@@ -2,7 +2,7 @@
    	<nav class="navbar">
    		<div class="container-fluid">
             <div class="navbar__header">
-                <a href="/" id="logo" data-toggle="tooltip" data-placement="bottom" title="Hola! Dreamakasa!"> 
+                <a href="/" id="logo" data-toggle="tooltip" data-placement="bottom" title="Dream Akasa">
                     <img src="images/logo.svg" alt="Dream Akasa">
                 </a>
                 <button type="button" class="btn toggle-menu pull-right" id="toggleNavbar">
@@ -12,16 +12,15 @@
                         <span class="icon-bar"></span>
                     </span>
                     <span class="text">Menu</span>
-                    <!-- Menu -->
                 </button>
             </div>
             <div class="navbar__collapse">
      			<ul class="nav navbar-nav pull-left">
+     				<li class="{% if page == 'index' %} active {% endif %}"><a href="index.html">Home</a></li>
      				<li class="{% if page == 'about' %} active {% endif %}"><a href="about.html">About</a></li>
-     				<li class="{% if page == 'services' %} active {% endif %}"><a href="services.html">Services</a></li>
      			</ul>
      			<ul class="nav navbar-nav pull-right">
-     				<li class="{% if page == 'works' %} active {% endif %}"><a href="#">Works</a></li>
+     				<li class="{% if page == 'services' %} active {% endif %}"><a href="services.html">Serv</a></li>
      				<li class="{% if page == 'contact' %} active {% endif %}"><a href="contact.html">Get In Touch</a></li>
      			</ul>
             </div>
