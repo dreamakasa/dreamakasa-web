@@ -110,9 +110,9 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('twitterlib', () => {
-  return gulp.src('app/twitteroauth/**/*')
-        .pipe(gulp.dest('dist/twitteroauth'));
+gulp.task('vendor', () => {
+  return gulp.src('vendor/twitteroauth/**/*')
+        .pipe(gulp.dest('dist/vendor/twitteroauth'));
 })
 
 gulp.task('serve', ['views', 'styles', 'scripts', 'fonts'], () => {
@@ -197,7 +197,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app/layouts'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras', 'twitterlib'], () => {
+gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras', 'vendor'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
