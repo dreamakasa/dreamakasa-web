@@ -43,7 +43,7 @@
 		.timeline-container {
 			width: 100%;
 			display: flex;
-	 		justify-content: space-around; 
+	 		justify-content: space-around;
 	 		flex-wrap: wrap;
 	 		// @media (max-width: 768px) { justify-content: center; }
 
@@ -57,8 +57,8 @@
 				border-radius: 5px;
 				&.twitter {
 					position: relative;
-					.text__body { 
-						padding: rem(25) rem(19); 
+					.text__body {
+						padding: rem(25) rem(19);
 						font-size: 1.125rem;
 						color: $grey7;
 						max-height: 12.6rem; // 16rem - (1.2rem+1.2rem+1rem)
@@ -78,14 +78,14 @@
 				}
 				&.instagram {
 					position: relative;
-					img { 
+					img {
 						height: 100%;
 						width: 100%;
 						object-fit: cover;
 					}
 					.text {
-						padding: rem(25) rem(19); 
-						background: rgba(0, 0, 0, .35); 
+						padding: rem(25) rem(19);
+						background: rgba(0, 0, 0, .35);
 						color: $grey8;
 						position: absolute;
 						max-height: 100%;
@@ -96,7 +96,7 @@
 						z-index: 1;
 					}
 					img, .text { transition: all 350ms ease; }
-					&:hover, &:focus { 
+					&:hover, &:focus {
 						img { transform: scale(1.05); }
 						.text { opacity: 1; }
 					}
@@ -107,11 +107,11 @@
 	}
 
 	&.section--footer {
-		font-size: .75rem; 
+		font-size: .75rem;
 		padding-top: 2rem;
 		padding-bottom: 0;
-		.footer__interested { 
-			color: white; 
+		.footer__interested {
+			color: white;
 			font-size: rem(28);
 			margin-bottom: rem(71);
 			text-align: center;
@@ -141,8 +141,8 @@
 			}
 			.footer__interested {
 				.text { display: block; margin-bottom: 1rem; margin-right: 0; }
-			}	
-			
+			}
+
 		}
 	}
 
@@ -167,21 +167,13 @@
 			font-size: rem(30);
 			border-left: none !important;
 			&:before {
-				content: "\f10d";
-				font-family: 'FontAwesome';
-				font-size: .5em;
-				top: -1em;
-				position: relative;
+				content: '"';
 			}
 			&:after {
-				content: "\f10e";
-				font-family: 'FontAwesome';
-				font-size: .5em;
-				bottom: 1em;
-				position: relative;
+				content: '"';
 			}
 		}
-		.profil { 
+		.profil {
 			color: $grey2;
 			font-size: rem(18);
 			img {
@@ -191,7 +183,7 @@
 				margin-right: .5em;
 			}
 		}
-	}	
+	}
 
 	&.section--services {
 		.technologies {
@@ -210,7 +202,7 @@
 					text-decoration: none;
 				}
 			}
-			
+
 			.heading {
 				margin-bottom: rem(74);
 				font-weight: normal;
@@ -240,12 +232,12 @@
 	}
 	&.section--team {
 		background: white;
-		padding: 0;	
+		padding: 0;
 		position: relative;
 		bottom: -$overflow-height;
 
 		.team__container {
-			background: white; 
+			background: white;
 			margin-top: -2 * $overflow-height;
 			padding-right: rem(56);
 			padding-left: rem(56);
