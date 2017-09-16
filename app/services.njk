@@ -1,7 +1,10 @@
+
+{% set page = "services" %} 
+{% set title = "What can we help you with? | " %} 
+
 {% extends "nunjucks/default.njk" %}
     {% block content %}
-    {% import "nunjucks/partials/navbar.njk" as navbar %}
-	{{ navbar.activePage('services') }}
+    {% include "nunjucks/partials/navbar.njk" %}
 
     	<div class="container-fluid main-container">
       	<div class="row section section--banner transparent text-center">

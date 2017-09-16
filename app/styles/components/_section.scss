@@ -232,7 +232,6 @@
 	$overflow-height: rem(85);
 	&.section--team-head {
 		// margin-bottom: $overflow-height;
-
 		height: rem(243);
 	}
 	&.section--team-join {
@@ -243,7 +242,7 @@
 		background: white;
 		padding: 0;	
 		position: relative;
-			bottom: -$overflow-height;
+		bottom: -$overflow-height;
 
 		.team__container {
 			background: white; 
@@ -260,7 +259,7 @@
 				overflow: hidden;
 				margin-bottom: 0;
 				text-align: center;
-				background: yellow;
+				background: $grey9;
 				img { //dummy <<<<<<<<<<<<<<<<<<<<<< !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 					height: 100%;
 					width: auto !important;
@@ -269,9 +268,10 @@
 					transform: translateX(-50%);
 				}
 			}
-			.text-wrapper {
+			.item__text-wrapper {
 				height: 11rem;
 				overflow-y: auto;
+				.item__text { font-weight: bold; }
 			}
 		}
 	}
