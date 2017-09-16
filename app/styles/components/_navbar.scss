@@ -95,8 +95,25 @@ nav.navbar {
 	}
 }
 
-// 595px ~~ $navbar__width in 14px context
-@media (max-width: 595px) {
+// @media (max-width: 760px) {
+// 	nav.navbar { 
+// 		&:before, &:after { width: 0; } 
+// 		border-bottom-left-radius: 5px;
+// 		border-bottom-right-radius: 5px;		
+// 	}
+// }
+
+// @media (max-width: 710px) {
+// 	nav.navbar .navbar-nav {
+// 		a {
+// 			padding-right: 1rem;
+// 			padding-left: 1rem;
+// 		}
+// 	}
+// }
+
+
+@media (max-width: rem($navbar__width)) {
 	nav.navbar { 
 		width: auto; 
 		.navbar-nav {
@@ -107,14 +124,6 @@ nav.navbar {
 				padding-left: 1.2rem;
 			}
 		}
-	}
-}
-
-@media (max-width: 760px) {
-	nav.navbar { 
-		&:before, &:after { width: 0; } 
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;		
 	}
 }
 
@@ -148,9 +157,7 @@ nav.navbar {
 				left: 0;
 				text-align: center;
 				display: block;
-				&:active {
-				    background: $grey5;
-				}
+				&:active { background: $grey5; }
 			}
 			#logo { 
 				display: inline-block; 

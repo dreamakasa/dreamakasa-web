@@ -1,4 +1,4 @@
-{% macro activePage(page = 'index') %}
+
    	<nav class="navbar">
    		<div class="container-fluid">
             <div class="navbar__header">
@@ -20,10 +20,9 @@
      				<li class="{% if page == 'about' %} active {% endif %}"><a href="about.html">About</a></li>
      			</ul>
      			<ul class="nav navbar-nav pull-right">
-     				<li class="{% if page == 'services' %} active {% endif %}"><a href="services.html">Serv</a></li>
+     				<li class="{% if page == 'services' %} active {% endif %}"><a href="services.html">Services</a></li>
      				<li class="{% if page == 'contact' %} active {% endif %}"><a href="contact.html">Get In Touch</a></li>
      			</ul>
             </div>
    		</div>
    	</nav>
-{% endmacro %}

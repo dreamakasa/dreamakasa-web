@@ -1,7 +1,9 @@
+
+{% set page = "index" %} 
+
 {% extends "nunjucks/default.njk" %}
     {% block content %}
-    {% import "nunjucks/partials/navbar.njk" as navbar %}
-	{{ navbar.activePage('index') }}
+    {% include "nunjucks/partials/navbar.njk" %}
 
 	    <div class="container-fluid main-container" id="index-page">
 	      	<div class="row section section--banner transparent p-b-0">

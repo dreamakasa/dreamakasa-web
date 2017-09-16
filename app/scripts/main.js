@@ -62,8 +62,9 @@ $(document).ready(function() {
 
 	// Fetch quotes for index.html only
 	if ($('.main-container').attr('id') == 'index-page') {
-		var quotes = $.ajax({
-			url: 'quotes.json',
+		var quotess = $.ajax({
+			url: '/quotes.json',
+			dataType: 'json',
 			success: function(res) {
 				var resQuote = res[Math.floor((Math.random() * res.length))];
 				$('.section--quotes#indexQuotes').find('blockquote').html(resQuote.quote)
@@ -72,8 +73,9 @@ $(document).ready(function() {
 															${resQuote.name}, ${resQuote.role}`
 												 );
 			},
-			error: function() {
-				console.log('error');
+			error: function(error) {
+				console.log('Error fetching quote');
+				console.log(error);
 			}
 
 		});

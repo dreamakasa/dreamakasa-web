@@ -1,8 +1,11 @@
+
+{% set page = "about" %} 
+{% set title = "Who are we? | " %} 
+
 {% extends "nunjucks/default.njk" %}
     {% block content %}
-    {% import "nunjucks/partials/navbar.njk" as navbar %}
-	{{ navbar.activePage('about') }}
-
+    {% include "nunjucks/partials/navbar.njk" %}
+	
 	    <div class="container-fluid main-container">
 	      	<div class="row section section--banner transparent text-center">
 	      		<div class="container">
@@ -71,7 +74,7 @@
 							<div class="item__img-wrapper">
 						   		<img src="images/gif5.gif" alt="Photo of Diah Ajeng" class="">
 						  	</div>
-						  	<div class="text-wrapper">
+						  	<div class="item__text-wrapper">
 							  	<p class="item__text">
 							   		Diah Ajeng
 							  	</p>
@@ -88,7 +91,7 @@
 							<div class="item__img-wrapper">
 						   		<img src="images/gif1.gif" alt="Photo of Afnizar Nur Ghifari" class="">
 						  	</div>
-						  	<div class="text-wrapper">
+						  	<div class="item__text-wrapper">
 						  		<p class="item__text">
 							   		Afnizar Nur Ghifari
 							  	</p>
@@ -105,7 +108,7 @@
 							<div class="item__img-wrapper">
 						   		<img src="images/gif4.gif" alt="Photo of Febry Ghaisani" class="">
 						  	</div>
-						  	<div class="text-wrapper">
+						  	<div class="item__text-wrapper">
 							  	<p class="item__text">
 							   		Febry Ghaisani
 							  	</p>
@@ -122,7 +125,7 @@
 							<div class="item__img-wrapper">
 						   		<img src="images/gif2.gif" alt="Photo of Kukuh Aji Sulistyo" class="">
 						  	</div>
-						  	<div class="text-wrapper">
+						  	<div class="item__text-wrapper">
 							  	<p class="item__text">
 							   		Kukuh Aji Sulistyo
 							  	</p>
@@ -139,7 +142,7 @@
 							<div class="item__img-wrapper">
 						   		<img src="images/gif6.gif" alt="Photo of Rike Adelia" class="">
 						  	</div>
-						  	<div class="text-wrapper">
+						  	<div class="item__text-wrapper">
 							  	<p class="item__text">
 							   		Rike Adelia
 							  	</p>
@@ -156,7 +159,7 @@
 							<div class="item__img-wrapper">
 						   		<img src="images/gif3.gif" alt="Photo of Setyo Nugroho" class="">
 						  	</div>
-						  	<div class="text-wrapper">
+						  	<div class="item__text-wrapper">
 							  	<p class="item__text">
 							   		Setyo Nugroho
 							  	</p>
