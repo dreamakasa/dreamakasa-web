@@ -173,8 +173,10 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    {children()}
-    <Footer />
+    <div className="container-fluid main-container">
+      {children()}
+      <Footer />
+    </div>
   </div>
 )
 

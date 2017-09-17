@@ -11,7 +11,7 @@ class IndexPage extends React.Component{
 	}
 	render(){
 		return (
-			<div className="container-fluid main-container" id="index-page">
+			<div>
 				<div className="row section section--banner transparent p-b-0">
 					<div className="container text-center">
 						<div className="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">

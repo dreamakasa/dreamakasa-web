@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const ServicesPage = () => (
-  <div className="container-fluid main-container">
+  <div>
       	<div className="row section section--banner transparent text-center">
       		<div className="container">
 	      		<div className="col-md-10 col-md-offset-1">

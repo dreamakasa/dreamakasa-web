@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const ContactPage = () => (
-  <div className="container-fluid main-container">
+  <div>
       	<div className="row section section--banner text-center transparent">
       		<div className="container">
 	      		<div className="col-md-10 col-md-offset-1">
