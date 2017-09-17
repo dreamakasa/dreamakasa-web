@@ -82,11 +82,9 @@ const Footer = () => (
           <ul className="list-group list-inline pull-left list-group--flush ">
             <li className="list-group-item">&copy; 2017 Dream Akasa
             </li>
-            <li className="list-group-item">+62 8761 12121 
-              <span>/
-              </span> 
-              <a href="http://localhost:9001/contact.html">Contact Us
-              </a>
+            <li class="list-group-item">+62 877 36923163 
+              <span>/</span> 
+              <a href="http://localhost:9001/contact.html">Contact Us</a>
             </li>
           </ul>
           <ul className="list-group list-inline pull-right list-group--flush">
