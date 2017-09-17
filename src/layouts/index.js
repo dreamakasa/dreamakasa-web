@@ -1,7 +1,51 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+// import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
+
+const NavLink = ({
+  to,
+  exact,
+  strict,
+  location,
+  activeClassName,
+  className,
+  activeStyle,
+  style,
+  isActive: getIsActive,
+  ariaCurrent,
+  ...rest
+}) => (
+  <Route
+    path={typeof to === 'object' ? to.pathname : to}
+    exact={exact}
+    strict={strict}
+    location={location}
+    children={({ location, match }) => {
+      
+      const isActive = !!(getIsActive ? getIsActive(match, location) : match)
+
+      return (
+        <li className={isActive ? [ className, activeClassName ].filter(i => i).join(' ') : className}>
+          <Link
+            to={to}
+            style={isActive ? { ...style, ...activeStyle } : style}
+            aria-current={isActive && ariaCurrent}
+            {...rest}
+          />
+        </li>
+      )
+    }}
+  />
+)
+
 
 const Header = () => (
   <nav className="navbar">
@@ -25,10 +69,7 @@ const Header = () => (
       </div>
       <div className="navbar__collapse">
         <ul className="nav navbar-nav pull-left">
-          <li className="">
-            <a href="index.html">Home
-            </a>
-          </li>
+          <NavLink to="/" activeClassName="active" exact>Home</NavLink>
           <li className="">
             <a href="about.html">About
             </a>
@@ -82,7 +123,7 @@ const Footer = () => (
           <ul className="list-group list-inline pull-left list-group--flush ">
             <li className="list-group-item">&copy; 2017 Dream Akasa
             </li>
-            <li class="list-group-item">+62 877 36923163 
+            <li className="list-group-item">+62 877 36923163 
               <span>/</span> 
               <a href="http://localhost:9001/contact.html">Contact Us</a>
             </li>
