@@ -73,14 +73,8 @@ const Header = () => (
           <NavLink to="/about" activeClassName="active">About</NavLink>
         </ul>
         <ul className="nav navbar-nav pull-right">
-          <li className="">
-            <a href="services.html">Services
-            </a>
-          </li>
-          <li className="">
-            <a href="contact.html">Get In Touch
-            </a>
-          </li>
+          <NavLink to="/services" activeClassName="active">Services</NavLink>
+          <NavLink to="/contact" activeClassName="active">Get In Touch</NavLink>
         </ul>
       </div>
     </div>
