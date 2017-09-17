@@ -3,7 +3,12 @@ import PropTypes from 'prop-types'
 // import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
 const NavLink = ({
   to,
@@ -19,54 +24,44 @@ const NavLink = ({
   ...rest
 }) => (
   <Route
-    path={typeof to === 'object'
-    ? to.pathname
-    : to}
+    path={typeof to === 'object' ? to.pathname : to}
     exact={exact}
     strict={strict}
     location={location}
-    children={({location, match}) => {
-    const isActive = !!(getIsActive
-      ? getIsActive(match, location)
-      : match)return (
-      <li
-        className={isActive
-        ? [className, activeClassName]
-          .filter(i => i)
-          .join(' ')
-        : className}>
-        <Link
-          to={to}
-          style={isActive
-          ? {
-            ...style,
-            ...activeStyle
-          }
-          : style}
-          aria-current={isActive && ariaCurrent}
-          {...rest}/>
-      </li>
-    )
-  }}/>
+    children={({ location, match }) => {
+      
+      const isActive = !!(getIsActive ? getIsActive(match, location) : match)
+
+      return (
+        <li className={isActive ? [ className, activeClassName ].filter(i => i).join(' ') : className}>
+          <Link
+            to={to}
+            style={isActive ? { ...style, ...activeStyle } : style}
+            aria-current={isActive && ariaCurrent}
+            {...rest}
+          />
+        </li>
+      )
+    }}
+  />
 )
+
 
 const Header = () => (
   <nav className="navbar">
     <div className="container-fluid">
       <div className="navbar__header">
-        <a
-          href="/"
-          id="logo"
-          data-toggle="tooltip"
-          data-placement="bottom"
-          title="Dream Akasa">
-          <img src="images/logo.svg" alt="Dream Akasa"/>
+        <a href="/" id="logo" data-toggle="tooltip" data-placement="bottom" title="Dream Akasa">
+          <img src="images/logo.svg" alt="Dream Akasa" />
         </a>
         <button type="button" className="btn toggle-menu pull-right" id="toggleNavbar">
           <span className="bar">
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
+            <span className="icon-bar">
+            </span>
+            <span className="icon-bar">
+            </span>
+            <span className="icon-bar">
+            </span>
           </span>
           <span className="text">Menu
           </span>
@@ -97,7 +92,8 @@ const Footer = () => (
     <div className="row section section--timeline transparent">
       <div className="container">
         <div className="container__inner">
-          <div className="timeline-container"></div>
+          <div className="timeline-container">
+          </div>
         </div>
       </div>
     </div>
@@ -105,11 +101,12 @@ const Footer = () => (
       <div className="container">
         <div className="footer__interested col-sm-12">
           <h4>
-            <span className="text">Interested to work with us?
+            <span className="text">Interested to work with us? 
             </span>
             <button className="btn btn--orange animate--arrow-right hover--swipe-left">
               GET IN TOUCH
-              <span className="arrow"></span>
+              <span className="arrow">
+              </span>
             </button>
           </h4>
         </div>
@@ -117,40 +114,46 @@ const Footer = () => (
           <ul className="list-group list-inline pull-left list-group--flush ">
             <li className="list-group-item">&copy; 2017 Dream Akasa
             </li>
-            <li className="list-group-item">+62 877 36923163
-              <span>/</span>
+            <li className="list-group-item">+62 877 36923163 
+              <span>/</span> 
               <a href="http://localhost:9001/contact.html">Contact Us</a>
             </li>
           </ul>
           <ul className="list-group list-inline pull-right list-group--flush">
             <li className="list-group-item">
               <a target="blank" href="https://www.facebook.com/dreamakasa">
-                <i className="fa fa-facebook-official"></i>
+                <i className="fa fa-facebook-official">
+                </i>
               </a>
             </li>
             <li className="list-group-item">
               <a target="blank" href="https://twitter.com/dreamakasa">
-                <i className="fa fa-twitter"></i>
+                <i className="fa fa-twitter">
+                </i>
               </a>
             </li>
             <li className="list-group-item">
               <a target="blank" href="https://www.instagram.com/dreamakasa/">
-                <i className="fa fa-instagram"></i>
+                <i className="fa fa-instagram">
+                </i>
               </a>
             </li>
             <li className="list-group-item">
               <a target="blank" href="https://www.linkedin.com/company/13219551/">
-                <i className="fa fa-linkedin-square"></i>
+                <i className="fa fa-linkedin-square">
+                </i>
               </a>
             </li>
             <li className="list-group-item">
               <a target="blank" href="https://github.com/dreamakasa">
-                <i className="fa fa-github-alt"></i>
+                <i className="fa fa-github-alt">
+                </i>
               </a>
             </li>
             <li className="list-group-item">
               <a target="blank" href="https://dribbble.com/dreamakasa">
-                <i className="fa fa-dribbble"></i>
+                <i className="fa fa-dribbble">
+                </i>
               </a>
             </li>
           </ul>
@@ -160,29 +163,25 @@ const Footer = () => (
   </div>
 )
 
-const TemplateWrapper = ({children}) => (
+const TemplateWrapper = ({ children }) => (
   <div className="wrapper">
     <Helmet
       title="Dream Akasa | We help companies from design to development with solution-by-design and human-centered approach."
       meta={[
-      {
-        name: 'description',
-        content: 'Dream Akasa'
-      }, {
-        name: 'keywords',
-        content: 'dreamakasa, Dream Akasa, development'
-      }
-    ]}/>
-    <Header/>
+        { name: 'description', content: 'Dream Akasa' },
+        { name: 'keywords', content: 'dreamakasa, Dream Akasa, development' },
+      ]}
+    />
+    <Header />
     <div className="container-fluid main-container">
       {children()}
-      <Footer/>
+      <Footer />
     </div>
   </div>
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.func,
 }
 
 export default TemplateWrapper
