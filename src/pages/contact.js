@@ -1,8 +1,16 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
 
 const ContactPage = () => (
   <div>
+      <Helmet
+        title="Get in Touch | Dream Akasa | We help companies from design to development with solution-by-design and human-centered approach."
+        meta={[
+          { name: 'description', content: 'Dream Akasa' },
+          { name: 'keywords', content: 'dreamakasa, Dream Akasa, development' },
+        ]}
+      />
       	<div className="row section section--banner text-center transparent">
       		<div className="container">
 	      		<div className="col-md-10 col-md-offset-1">
