@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const SecondPage = () => (
+const AboutPage = () => (
   <div className="container-fluid main-container">
     <div className="row section section--banner transparent text-center">
       <div className="container">
@@ -218,4 +218,4 @@ const SecondPage = () => (
   </div>
 )
 
-export default SecondPage
+export default AboutPage
