@@ -70,10 +70,7 @@ const Header = () => (
       <div className="navbar__collapse">
         <ul className="nav navbar-nav pull-left">
           <NavLink to="/" activeClassName="active" exact>Home</NavLink>
-          <li className="">
-            <a href="about.html">About
-            </a>
-          </li>
+          <NavLink to="/about" activeClassName="active">About</NavLink>
         </ul>
         <ul className="nav navbar-nav pull-right">
           <li className="">
