@@ -1,0 +1,38 @@
+[
+	{
+		"name"	: "Diah Ajeng",
+		"img"	: "images/default-avatar.png",
+		"role"	: "Co-Founder, Business and Product development",
+		"quote"	: "In developing, we always keep up the latest technology by using up to date tools."
+	},
+	{
+		"name": "Afnizar Nur Ghifari",
+		"img"	: "images/default-avatar.png",
+		"role": "Co-Founder, Creative Director",
+		"quote": "We are not just designing something that work, but we make it easy to use and make your product more efficient!"
+	},
+	{
+		"name": "Febry Ghaisani",
+		"img"	: "images/default-avatar.png",
+		"role": "Co-Founder, Business and Product development",
+		"quote": "We put everything that we got to build a good quality product."
+	},
+	{
+		"name": "Kukuh Aji Sulistyo",
+		"img"	: "images/default-avatar.png",
+		"role": "VP Engineering",
+		"quote": "We are creating simplicity to control the complexity of your product."
+	},
+	{
+		"name": "Rike Adelia",
+		"img"	: "images/default-avatar.png",
+		"role": "UI/UX Strategist",
+		"quote": "Teamwork is our principle."
+	},
+	{
+		"name": "Setyo Nugroho",
+		"img"	: "images/default-avatar.png",
+		"role": "Software Engineer",
+		"quote": "We only using the best tech stack that solve your problem perfectly."
+	}
+]
