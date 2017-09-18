@@ -117,7 +117,7 @@ $(document).ready(function() {
 
 		// Twitter
 		$.ajax({
-			url: 'twitter-get.php',
+			url: 'https://code.dreamakasa.com/twitter-get.php',
 			success: function(res) {
 					res.forEach(function(tweet) {
 						$('.section--timeline .timeline-container .timeline:first-child').after(
@@ -136,4 +136,4 @@ $(document).ready(function() {
 	})
 });
 
-console.log("Hi, it looks like you're a very curious about code 😻! Let's join us, let us know about you via %ccontact@dreamakasa.com", "background: #3fa9f5; color: white; padding: 3px; border-radius: 3px; font-weight: bold");
+console.log('Hi, it looks like you\'re a very curious about code 😻! Let\'s join us, let us know about you via %ccontact@dreamakasa.com', 'background: #3fa9f5; color: white; padding: 3px; border-radius: 3px; font-weight: bold');
