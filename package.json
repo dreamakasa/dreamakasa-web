@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "dream akasa website",
+  "description": "Dream Akasa Website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Setyo Nugroho <yo@setyongr.com>",
   "dependencies": {
+    "axios": "^0.16.2",
     "gatsby": "^1.9.36",
     "gatsby-link": "^1.6.15",
     "gatsby-plugin-nprogress": "^1.0.7",
