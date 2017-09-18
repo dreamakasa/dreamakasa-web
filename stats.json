@@ -1,0 +1,64 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-3bde1892fb9b697a36f2.js",
+      "component---src-pages-index-js-3bde1892fb9b697a36f2.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-pages-contact-js": [
+      "component---src-pages-contact-js-e4b3b84c833bb0da74aa.js",
+      "component---src-pages-contact-js-e4b3b84c833bb0da74aa.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-d98227ea10b139199ddf.js",
+      "component---src-layouts-index-js-d98227ea10b139199ddf.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-9662879a467791392b1c.js",
+      "commons-9662879a467791392b1c.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---contact": [
+      "path---contact-a0e39f21c11f6a62c5ab.js",
+      "path---contact-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-f38f04378b027b5ca17e.js",
+      "app-f38f04378b027b5ca17e.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---services": [
+      "path---services-a0e39f21c11f6a62c5ab.js",
+      "path---services-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-about-js": [
+      "component---src-pages-about-js-d76cb9107a432861add6.js",
+      "component---src-pages-about-js-d76cb9107a432861add6.js.map"
+    ],
+    "component---src-pages-services-js": [
+      "component---src-pages-services-js-681736bf98ebe331db8a.js",
+      "component---src-pages-services-js-681736bf98ebe331db8a.js.map"
+    ],
+    "path---about": [
+      "path---about-a0e39f21c11f6a62c5ab.js",
+      "path---about-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
