@@ -63,7 +63,7 @@ $(document).ready(function() {
 	// Fetch quotes for index.html only
 	if ($('.main-container').attr('id') == 'index-page') {
 		var quotess = $.ajax({
-			url: '/quotes.json',
+			url: 'quotes.json',
 			dataType: 'json',
 			success: function(res) {
 				var resQuote = res[Math.floor((Math.random() * res.length))];
