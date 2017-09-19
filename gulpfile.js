@@ -111,8 +111,8 @@ gulp.task('extras', () => {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 gulp.task('vendor', () => {
-  return gulp.src('vendor/twitteroauth/**/*')
-        .pipe(gulp.dest('dist/vendor/twitteroauth'));
+  return gulp.src('app/vendor/**/*')
+    .pipe(gulp.dest('dist/vendor'));
 })
 
 gulp.task('serve', ['views', 'styles', 'scripts', 'fonts'], () => {
