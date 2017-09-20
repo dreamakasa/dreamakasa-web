@@ -51,9 +51,9 @@ const Header = () => (
   <nav className="navbar">
     <div className="container-fluid">
       <div className="navbar__header">
-        <a href="/" id="logo" data-toggle="tooltip" data-placement="bottom" title="Dream Akasa">
-          <img src="images/logo.svg" alt="Dream Akasa" />
-        </a>
+        <Link to="/" exact id="logo" data-toggle="tooltip" data-placement="bottom" title="Dream Akasa">
+          <img src="/images/logo.svg" alt="Dream Akasa" />
+        </Link>
         <button type="button" className="btn toggle-menu pull-right" id="toggleNavbar">
           <span className="bar">
             <span className="icon-bar">
