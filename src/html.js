@@ -38,8 +38,8 @@ module.exports = class HTML extends React.Component {
           <link rel="manifest" href="/manifest.json" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5391fc" />
           <meta name="theme-color" content="#ffffff" />
-          <link rel="stylesheet" href="styles/main.css" />
-          <script src="scripts/vendor/modernizr.js"></script>
+          <link rel="stylesheet" href="/styles/main.css" />
+          <script src="/scripts/vendor/modernizr.js"></script>
         </head>
         <body>
           <div id="overlay"></div>
@@ -51,9 +51,9 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script src="scripts/vendor.js"></script>
-          <script src="scripts/plugins.js"></script>
-          <script src="scripts/main.js"></script>
+          <script src="/scripts/vendor.js"></script>
+          <script src="/scripts/plugins.js"></script>
+          <script src="/scripts/main.js"></script>
         </body>
       </html>
     )

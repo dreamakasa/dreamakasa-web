@@ -32,7 +32,7 @@ const ServicesPage = () => (
 										<div className="items media">
 												<div className="media-left">
 														<div className="item__img-wrapper circle">
-																<img src="images/web.svg" className="img-responsive" alt="Web Development"/>
+																<img src="/images/web.svg" className="img-responsive" alt="Web Development"/>
 														</div>
 												</div>
 												<div className="media-body">
@@ -46,7 +46,7 @@ const ServicesPage = () => (
 												<div className="media-left">
 														<div className="item__img-wrapper circle">
 																<img
-																		src="images/mobile.svg"
+																		src="/images/mobile.svg"
 																		className="img-responsive"
 																		alt="Mobile Application Development"/>
 														</div>
@@ -63,7 +63,7 @@ const ServicesPage = () => (
 										<div className="items media">
 												<div className="media-left">
 														<div className="item__img-wrapper circle">
-																<img src="images/product.svg" className="img-responsive" alt="Product Design"/>
+																<img src="/images/product.svg" className="img-responsive" alt="Product Design"/>
 														</div>
 												</div>
 												<div className="media-body">
@@ -78,7 +78,7 @@ const ServicesPage = () => (
 												<div className="media-left">
 														<div className="item__img-wrapper circle">
 																<img
-																		src="images/workshop.svg"
+																		src="/images/workshop.svg"
 																		className="img-responsive"
 																		alt="Workshop & Seminar"/>
 														</div>
@@ -116,7 +116,7 @@ const ServicesPage = () => (
 																<blockquote>We trust Dream Akasa with all our design & development projects and
 																		are very happy working together.</blockquote>
 																<p className="profil">
-																		<img src="images/default-avatar.png"/>
+																		<img src="/images/default-avatar.png"/>
 																		Carl Carlson
 																</p>
 														</div>
@@ -126,7 +126,7 @@ const ServicesPage = () => (
 																<blockquote>Dream akasa help us to design and develop for our company
 																		application. Their response and work is really great! Very recommended to work.</blockquote>
 																<p className="profil">
-																		<img src="images/default-avatar.png"/>
+																		<img src="/images/default-avatar.png"/>
 																		Arron Montgomery
 																</p>
 														</div>
@@ -137,7 +137,7 @@ const ServicesPage = () => (
 																		<i>stealth</i>
 																		startup app. The result is really well and detail!</blockquote>
 																<p className="profil">
-																		<img src="images/default-avatar.png"/>
+																		<img src="/images/default-avatar.png"/>
 																		Tracey Carlson
 																</p>
 														</div>

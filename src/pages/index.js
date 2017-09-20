@@ -33,7 +33,7 @@ class IndexPage extends React.Component {
 												<div className="col-xs-12">
 														<a href="" className="hunk hunk--small hunk--left">
 																<div className="hunk__inner">
-																		<img src="images/aslan.png" className="hunk__img" alt="Application Aslan"/>
+																		<img src="/images/aslan.png" className="hunk__img" alt="Application Aslan"/>
 																		<div className="hunk__label">
 																				<p className="sub">Application
 																				</p>
@@ -58,7 +58,7 @@ class IndexPage extends React.Component {
 														</a>
 														<a href="" className="hunk hunk--small">
 																<div className="hunk__inner">
-																		<img src="images/nawarin.png" className="hunk__img" alt="Project Nawar.in"/>
+																		<img src="/images/nawarin.png" className="hunk__img" alt="Project Nawar.in"/>
 																		<div className="hunk__label">
 																				<p className="sub">Project
 																				</p>
@@ -106,7 +106,7 @@ class IndexPage extends React.Component {
 														</div>
 														<div className="col-sm-6 col-md-3 text-center m-b-2 items">
 																<div className="item__img-wrapper circle">
-																		<img src="images/product.svg" className="img-responsive" alt="Product Design"/>
+																		<img src="/images/product.svg" className="img-responsive" alt="Product Design"/>
 																</div>
 																<div className="item__text">
 																		Product Design
@@ -129,34 +129,34 @@ class IndexPage extends React.Component {
 														<h5 className="heading">Technologies and tools that we use to build great products
 														</h5>
 														<a href="#" data-toggle="tooltip" data-placement="top" title="Sketch">
-																<img src="images/sketch.png" alt="Sketch"/>
+																<img src="/images/sketch.png" alt="Sketch"/>
 														</a>
 														<a href="#" data-toggle="tooltip" data-placement="top" title="Adobe Photoshop">
-																<img src="images/ps.png" alt="Adobe Photoshop"/>
+																<img src="/images/ps.png" alt="Adobe Photoshop"/>
 														</a>
 														<a href="#" data-toggle="tooltip" data-placement="top" title="Adobe Ilustrator">
-																<img src="images/ai.png" alt="Adobe Ilustrator"/>
+																<img src="/images/ai.png" alt="Adobe Ilustrator"/>
 														</a>
 														<a href="#" data-toggle="tooltip" data-placement="top" title="Android Studio">
-																<img src="images/android-studio.png" alt="Android Studio"/>
+																<img src="/images/android-studio.png" alt="Android Studio"/>
 														</a>
 														<a href="#" data-toggle="tooltip" data-placement="top" title="Laravel">
-																<img src="images/laravel.png" alt="Laravel"/>
+																<img src="/images/laravel.png" alt="Laravel"/>
 														</a>
 														<a href="#" data-toggle="tooltip" data-placement="top" title="Vue.js">
-																<img src="images/vuejs.png" alt="Vue.js"/>
+																<img src="/images/vuejs.png" alt="Vue.js"/>
 														</a>
 														<a href="#" data-toggle="tooltip" data-placement="top" title="React.js">
-																<img src="images/react.png" alt="React.js"/>
+																<img src="/images/react.png" alt="React.js"/>
 														</a>
 														<a href="#" data-toggle="tooltip" data-placement="top" title="Zeplin">
-																<img src="images/zeplin.png" alt="Zeplin"/>
+																<img src="/images/zeplin.png" alt="Zeplin"/>
 														</a>
 														<a href="#" data-toggle="tooltip" data-placement="top" title="Node JS">
-																<img src="images/nodejs.png" alt="Node JS"/>
+																<img src="/images/nodejs.png" alt="Node JS"/>
 														</a>
 														<a href="#" data-toggle="tooltip" data-placement="top" title="Docker">
-																<img src="images/docker.png" alt="Docker"/>
+																<img src="/images/docker.png" alt="Docker"/>
 														</a>
 												</div>
 										</div>

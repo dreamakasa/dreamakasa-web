@@ -38,7 +38,7 @@ const AboutPage = () => (
         <div className=" col-sm-12 m-t-1">
           <div className="col-sm-6 col-md-3 text-center m-b-2 items">
             <div className="item__img-wrapper circle">
-              <img src="images/problem.svg" className="img-responsive center-block"/>
+              <img src="/images/problem.svg" className="img-responsive center-block"/>
             </div>
             <div className="item__text">
               Got Problem
@@ -48,7 +48,7 @@ const AboutPage = () => (
           </div>
           <div className="col-sm-6 col-md-3 text-center m-b-2 items">
             <div className="item__img-wrapper circle">
-              <img src="images/mobile.svg" className="img-responsive"/>
+              <img src="/images/mobile.svg" className="img-responsive"/>
             </div>
             <div className="item__text">
               Research and Understand
@@ -58,7 +58,7 @@ const AboutPage = () => (
           </div>
           <div className="col-sm-6 col-md-3 text-center m-b-2 items">
             <div className="item__img-wrapper circle">
-              <img src="images/product.svg" className="img-responsive"/>
+              <img src="/images/product.svg" className="img-responsive"/>
             </div>
             <div className="item__text">
               Design & Develop the Solution
@@ -69,7 +69,7 @@ const AboutPage = () => (
           </div>
           <div className="col-sm-6 col-md-3 text-center m-b-2 items">
             <div className="item__img-wrapper circle">
-              <img src="images/check.svg" className="img-responsive"/>
+              <img src="/images/check.svg" className="img-responsive"/>
             </div>
             <div className="item__text">
               Validation
@@ -93,7 +93,7 @@ const AboutPage = () => (
         <div className="team__container clearfix">
           <div className="col-sm-6 col-md-4 text-center m-b-2 items">
             <div className="item__img-wrapper">
-              <img src="images/gif5.gif" alt="Photo of Diah Ajeng" className=""/>
+              <img src="/images/gif5.gif" alt="Photo of Diah Ajeng" className=""/>
             </div>
             <div className="item__text-wrapper">
               <p className="item__text">
@@ -104,17 +104,17 @@ const AboutPage = () => (
               </p>
               <div className="item__social-link">
                 <a target="blank" href="https://twitter.com/diahajengdwi">
-                  <img src="images/twitter.svg" alt="Ajeng's Twitter"/>
+                  <img src="/images/twitter.svg" alt="Ajeng's Twitter"/>
                 </a>
                 <a target="blank" href="https://www.linkedin.com/in/diahajengdwi/">
-                  <img src="images/linkedin.svg" alt="Ajeng's Linkedin"/>
+                  <img src="/images/linkedin.svg" alt="Ajeng's Linkedin"/>
                 </a>
               </div>
             </div>
           </div>
           <div className="col-sm-6 col-md-4 text-center m-b-2 items">
             <div className="item__img-wrapper">
-              <img src="images/gif1.gif" alt="Photo of Afnizar Nur Ghifari" className=""/>
+              <img src="/images/gif1.gif" alt="Photo of Afnizar Nur Ghifari" className=""/>
             </div>
             <div className="item__text-wrapper">
               <p className="item__text">
@@ -125,17 +125,17 @@ const AboutPage = () => (
               </p>
               <div className="item__social-link">
                 <a target="blank" href="https://twitter.com/afnizarnur">
-                  <img src="images/twitter.svg" alt="Afnizar's Twitter"/>
+                  <img src="/images/twitter.svg" alt="Afnizar's Twitter"/>
                 </a>
                 <a target="blank" href="https://www.linkedin.com/in/afnizarnur/">
-                  <img src="images/linkedin.svg" alt="Afnizar's Linkedin"/>
+                  <img src="/images/linkedin.svg" alt="Afnizar's Linkedin"/>
                 </a>
               </div>
             </div>
           </div>
           <div className="col-sm-6 col-md-4 text-center m-b-2 items">
             <div className="item__img-wrapper">
-              <img src="images/gif4.gif" alt="Photo of Febry Ghaisani" className=""/>
+              <img src="/images/gif4.gif" alt="Photo of Febry Ghaisani" className=""/>
             </div>
             <div className="item__text-wrapper">
               <p className="item__text">
@@ -146,17 +146,17 @@ const AboutPage = () => (
               </p>
               <div className="item__social-link">
                 <a target="blank" href="https://twitter.com/febryghaisani">
-                  <img src="images/twitter.svg" alt="Febry's Twitter"/>
+                  <img src="/images/twitter.svg" alt="Febry's Twitter"/>
                 </a>
                 <a target="blank" href="https://www.linkedin.com/in/febry-ghaisani-85b0a514b/">
-                  <img src="images/linkedin.svg" alt="Febry's Linkedin"/>
+                  <img src="/images/linkedin.svg" alt="Febry's Linkedin"/>
                 </a>
               </div>
             </div>
           </div>
           <div className="col-sm-6 col-md-4 text-center m-b-2 items">
             <div className="item__img-wrapper">
-              <img src="images/gif2.gif" alt="Photo of Kukuh Aji Sulistyo" className=""/>
+              <img src="/images/gif2.gif" alt="Photo of Kukuh Aji Sulistyo" className=""/>
             </div>
             <div className="item__text-wrapper">
               <p className="item__text">
@@ -167,19 +167,19 @@ const AboutPage = () => (
               </p>
               <div className="item__social-link">
                 <a target="blank" href="https://twitter.com/sulistyo_kukuh">
-                  <img src="images/twitter.svg" alt="Kukuh's Twitter"/>
+                  <img src="/images/twitter.svg" alt="Kukuh's Twitter"/>
                 </a>
                 <a
                   target="blank"
                   href="https://www.linkedin.com/in/kukuh-aji-sulistyo-5baa6012b/">
-                  <img src="images/linkedin.svg" alt="Kukuh's Linkedin"/>
+                  <img src="/images/linkedin.svg" alt="Kukuh's Linkedin"/>
                 </a>
               </div>
             </div>
           </div>
           <div className="col-sm-6 col-md-4 text-center m-b-2 items">
             <div className="item__img-wrapper">
-              <img src="images/gif6.gif" alt="Photo of Rike Adelia" className=""/>
+              <img src="/images/gif6.gif" alt="Photo of Rike Adelia" className=""/>
             </div>
             <div className="item__text-wrapper">
               <p className="item__text">
@@ -190,17 +190,17 @@ const AboutPage = () => (
               </p>
               <div className="item__social-link">
                 <a target="blank" href="https://twitter.com/capmaniachelsea">
-                  <img src="images/twitter.svg" alt="Rike's Twitter"/>
+                  <img src="/images/twitter.svg" alt="Rike's Twitter"/>
                 </a>
                 <a target="blank" href="https://www.linkedin.com/in/rike-adelia-205988123/">
-                  <img src="images/linkedin.svg" alt="Rike's Linkedin"/>
+                  <img src="/images/linkedin.svg" alt="Rike's Linkedin"/>
                 </a>
               </div>
             </div>
           </div>
           <div className="col-sm-6 col-md-4 text-center m-b-2 items">
             <div className="item__img-wrapper">
-              <img src="images/gif3.gif" alt="Photo of Setyo Nugroho" className=""/>
+              <img src="/images/gif3.gif" alt="Photo of Setyo Nugroho" className=""/>
             </div>
             <div className="item__text-wrapper">
               <p className="item__text">
@@ -211,10 +211,10 @@ const AboutPage = () => (
               </p>
               <div className="item__social-link">
                 <a target="blank" href="https://twitter.com/setyongr">
-                  <img src="images/twitter.svg" alt="Setyo's Twitter"/>
+                  <img src="/images/twitter.svg" alt="Setyo's Twitter"/>
                 </a>
                 <a target="blank" href="https://www.linkedin.com/in/setyongr/">
-                  <img src="images/linkedin.svg" alt="Setyo's Linkedin"/>
+                  <img src="/images/linkedin.svg" alt="Setyo's Linkedin"/>
                 </a>
               </div>
             </div>
